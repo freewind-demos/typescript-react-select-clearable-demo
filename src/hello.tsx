@@ -18,7 +18,7 @@ export default function Hello() {
   const [selectedOption, setSelectedOption] = useState<ValueType<OptionType>>(null)
   return <div>
     <h1>Hello React Select</h1>
-    <Select value={selectedOption} onChange={setSelectedOption} options={options}/>
+    <Select value={selectedOption} onChange={setSelectedOption} options={options} isClearable={true}/>
     <div>{JSON.stringify(selectedOption)}</div>
   </div>
 };
